@@ -7,7 +7,9 @@ fun main(args: Array<String>) {
         println("Limit required")
         exitProcess(1)
     }
-    for (n in 1..args[0].toInt()) {
-
+    var sum = 0
+    for (n in 1..args[0].toInt() step 2) {
+        sum += n
     }
+    println(sum)
 }
